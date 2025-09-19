@@ -1,0 +1,251 @@
+/* CSS BY Danny Lane */
+
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Kavoon&display=swap');
+
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after {
+  content: ''; content: none;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* ROOT VARIABLES */
+:root{
+  --teal: #4C7AC0;
+  --purple: #484FB7;    
+  --lavender: #6BBFE7; 
+  --yellow: #E9BB57;
+  --pink: #D9526F;
+  --dark-gray: #1E1E1E;
+  --white: #ffffff;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--teal); 
+  color: var(--dark-gray);
+  margin: 0;
+}
+
+.container {
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  background: var(--purple);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-bottom: 30px; 
+}
+
+.site-header {
+  padding: 12px 12px 4px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Kavoon', cursive;
+  font-size: 3em;
+  color: var(--white);
+  line-height: 1;
+}
+.site-header .tagline {
+  color: var(--white);
+  margin-top: 6px;
+  font-style: italic;
+  padding-bottom: 20px;
+
+}
+
+ h2 {
+	font-family: 'Kavoon', sans-serif, cursive;
+	color: var(--white);
+	font-size: 2em;
+	margin: 8px 16px;
+}
+
+
+h3 {
+	font-size: 1.5em;;
+	color: var(--yellow);
+	padding: 8px 16px;
+	font-weight: bold;
+}
+
+h4 {
+	font-weight: bold;
+	color: var(--purple);
+}
+
+.site-nav {
+	width: 450px;
+	margin: 12px auto;
+	background: var(--yellow);
+	padding: 10px 0 10px 0;
+	
+}
+.nav-title {
+	font-style: italic;
+	font-weight: bold;
+	color: var(--dark-gray);
+	margin-bottom: 8px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.nav-list { 
+	padding: 0; margin: 0; 
+}
+.nav-list li 
+{
+	 margin: 8px auto;
+	 width: 90%;
+	
+}
+
+.nav-list a {
+	display: block;
+	text-align: center;
+	background: var(--white);
+	color: var(--purple);
+	text-decoration: none;
+	padding: 15px 10px;
+	text-transform: uppercase;
+	font-weight: bolder;
+
+}
+
+main {
+	padding: 6px 0 0;
+	width: 100%;
+	flex: 1 0 auto;
+}
+
+.card {
+	background: var(--white);
+	border-radius: 10px;
+	padding: 12px;
+	margin: 8px 16px;
+	color: var(--dark-gray);
+	box-shadow: none;
+}
+
+#why {
+	background: var(--pink);
+	padding: 10px;
+}
+.why-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 8px;
+	margin: 8px 16px 14px;
+}
+.why-grid li {
+	color: var(--dark-gray);
+	text-align: center;
+	padding: 30px;
+	border-radius: 8px;
+	font-weight: 700;
+}
+
+.why-grid .box1 { background: var(--lavender); }
+.why-grid .box2 { background: var(--teal); }
+.why-grid .box3 { background: var(--yellow); }
+.why-grid .box4 { background: var(--white); }
+
+table {
+	width: 60%;
+	margin: auto;
+	background: var(--white);
+	border-radius: 6px;
+}
+table td {
+	border: 1px solid var(--yellow);
+	padding: 10px;
+	text-align: center;
+}
+
+table th{
+	border: 1px solid var(--yellow);
+	background: var(--yellow);
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
+.contact-section {
+	background: var(--pink);
+	padding: 10px;
+	margin-top: 10px;
+}
+
+.contact-section p {
+	margin-bottom: 10px;
+	color: var(--white);
+}
+
+a.schedule {
+	display: block;
+	text-align: center;
+	width: 80%;
+	margin: auto;
+	background: var(--white);
+	color: var(--dark-gray);
+	box-shadow: 3px 3px 5px;
+	border-radius: 8px;
+	font-weight: bold;
+	padding: 20px;
+}
+
+.site-footer {
+	margin: 0 auto;
+	color: var(--white);
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	width: 450px;
+	height: 60px;
+	gap: 20px;
+
+
+}
+.site-footer a { 
+	color: var(--white); text-decoration: underline; 
+}
+ 
+.site-footer p {
+	margin: 0 0 -40px 0;
+}
